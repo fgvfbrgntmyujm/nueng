@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: url('https://your-sea-image-url.com/sea-background.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            color: #444; 
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: auto;
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        h1 { 
+            font-size: 2.5em; 
+            font-weight: 700; 
+            margin-bottom: 15px; 
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+        button { 
+            padding: 12px 25px; 
+            font-size: 18px; 
+            background: #333; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            transition: background 0.3s, transform 0.3s; 
+            margin: 10px;
+        }
+        button:hover { 
+            background: #555; 
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kittipong Jaicheaun</h1>
+        <p>ธุรกิจบัณฑิต คณะ คอมพิวเตอร์</p>
+        <button onclick="location.href='/profile'">Go to Profile Page</button>
+        <button onclick="location.href='/about'">Go to About Page</button>
+    </div>
+</body>
+</html>
